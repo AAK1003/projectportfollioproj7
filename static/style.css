@@ -1,0 +1,180 @@
+/* ==========================================================================
+   1. GLOBAL STYLES & VARIABLES (Red Theme)
+   ========================================================================= */
+:root {
+    --bg-color: #fef1f2;         /* Very pale crimson-rose background */
+    --text-main: #6c011e;        /* Dark, deep crimson for readability */
+    --text-muted: #9f1239;       /* Lighter crimson-slate for descriptions */
+    --primary: #dc2626;          /* Vibrant Red - the professional accent */
+    --accent: #f43f5e;           /* Rose-red - the fun, energetic touch */
+    --card-bg: #ffffff;
+    --radius: 12px;              /* Smooth, friendly rounded corners */
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* ==========================================================================
+   2. NAVIGATION (The Professional Header)
+   ========================================================================= */
+header {
+    background: var(--card-bg);
+    border-bottom: 2px solid #fecdd3; /* Soft red border */
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-brand {
+    font-weight: 800;
+    font-size: 1.25rem;
+    color: var(--primary); /* Vibrant Red Brand */
+    text-decoration: none;
+}
+
+nav a {
+    color: var(--text-main);
+    text-decoration: none;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+nav a:hover {
+    color: var(--accent); /* Rose-red hover effect */
+}
+
+/* ==========================================================================
+   3. HERO SECTION (The Red Welcome)
+   ========================================================================= */
+main {
+    max-width: 1100px;
+    margin: 3rem auto;
+    padding: 0 1.5rem;
+}
+
+.hero {
+    text-align: center;
+    padding: 3rem 1rem;
+    /* Red-to-Rose gradient background */
+    background: linear-gradient(135deg, #fecaca 0%, #fee2e2 100%);
+    border-radius: var(--radius);
+    margin-bottom: 3rem;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-top: 0;
+    color: var(--text-main);
+}
+
+/* Gradient text effect in the header */
+.hero h1 span {
+    background: linear-gradient(to right, var(--primary), var(--accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+    font-size: 1.15rem;
+    color: var(--text-muted);
+    max-width: 600px;
+    margin: 1rem auto 0;
+}
+
+/* ==========================================================================
+   4. PROJECT GRID & CARDS (The Crimson Showcase)
+   ========================================================================= */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    background: var(--card-bg);
+    border: 2px solid #fecdd3; /* Rose border */
+    border-radius: var(--radius);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: var(--transition);
+}
+
+/* Playful lift and red glow on hover */
+.project-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--accent);
+    box-shadow: 0 12px 20px -8px rgba(220, 38, 38, 0.15); /* Red shadow */
+}
+
+.project-card h3 {
+    margin-top: 0;
+    font-size: 1.35rem;
+    color: var(--text-main);
+}
+
+.project-card p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    flex-grow: 1;
+}
+
+/* ==========================================================================
+   5. BUTTONS & BADGES (The Details)
+   ========================================================================= */
+.tech-badge {
+    display: inline-block;
+    background-color: #ffe4e6; /* Soft red badge background */
+    color: var(--text-main); /* Dark red badge text */
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px; /* Pill shape */
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.btn {
+    display: inline-block;
+    background: var(--primary); /* Vibrant Red Button */
+    color: white;
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 1rem;
+    transition: var(--transition);
+}
+
+.btn:hover {
+    background: #b91c1c; /* Darker red hover */
+    box-shadow: 0 4px 12px rgba(220, 38, 38, 0.3); /* Red glow */
+}
+
+/* ==========================================================================
+   6. FOOTER (Muted Red)
+   ========================================================================= */
+footer {
+    text-align: center;
+    padding: 4rem 0 2rem;
+    color: var(--text-muted); /* Muted red footer text */
+    font-size: 0.9rem;
+}

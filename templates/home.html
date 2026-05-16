@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="hero">
+    <h1>Greetings, I'm <span>Avyukth Arun Kumar</span></h1>
+    <p>Python Developer & Software Engineer. Welcome to my portfollio with all of my personal projects!</p>
+</section>
+
+<section class="project-section">
+    <div class="project-grid">
+        {% for id, details in projects.items() %}
+        <div class="project-card">
+            <div>
+                <h3>{{ details.title }}</h3>
+                <p>{{ details.description }}</p>
+            </div>
+            <a class="btn" href="{{ url_for('project_detail', project_id=id) }}">Explore Project &rarr;</a>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+{% endblock %}

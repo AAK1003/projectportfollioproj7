@@ -1,0 +1,27 @@
+Action Log - 2025-05-02_18-28-25
+Mouse Move: (1460, 38)
+Mouse Click: (419, 330), Button: Button.left, Pressed: True
+Mouse Click: (416, 330), Button: Button.left, Pressed: False
+Keyboard Press: 'i'
+Keyboard Release: 'i'
+Keyboard Press: 'o'
+Keyboard Press: 'i'
+Keyboard Press: 'f'
+Keyboard Press: 'j'
+Keyboard Press: 'd'
+Keyboard Release: 'i'
+Keyboard Release: 'o'
+Keyboard Release: 'j'
+Keyboard Release: 'f'
+Keyboard Release: 'd'
+Keyboard Press: Key.enter
+Keyboard Release: Key.enter
+Keyboard Press: 'a'
+Keyboard Press: 'd'
+Keyboard Press: 'f'
+Keyboard Release: 'a'
+Keyboard Release: 'f'
+Keyboard Release: 'd'
+Keyboard Press: Key.enter
+Keyboard Release: Key.enter
+Keyboard Press: Key.esc

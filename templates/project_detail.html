@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+<article class="project-detail-container" style="background: #ffffff; padding: 3rem; border-radius: 12px; border: 2px solid #fecdd3;">
+    
+    <a href="/" style="color: var(--primary); text-decoration: none; font-weight: 600;">&larr; Back to Dashboard</a>
+    
+    <h1 style="font-size: 2.5rem; color: var(--text-main); margin-top: 1.5rem; margin-bottom: 1rem;">
+        {{ project.title }}
+    </h1>
+    
+    <p style="font-size: 1.15rem; color: var(--text-muted); margin-bottom: 2rem; max-width: 800px;">
+        {{ project.description }}
+    </p>
+    
+    <h3 style="color: var(--text-main); margin-bottom: 0.75rem;">Built With:</h3>
+    <div style="margin-bottom: 2.5rem;">
+        {% for tech in project.tech_stack %}
+            <span class="tech-badge">{{ tech }}</span>
+        {% endfor %}
+    </div>
+
+    <a href="{{ project.github }}" target="_blank" class="btn" style="display: inline-block;">
+        View Source on GitHub
+    </a>
+    
+</article>
+{% endblock %}
