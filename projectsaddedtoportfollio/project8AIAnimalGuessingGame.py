@@ -4,7 +4,7 @@ from tkinter import scrolledtext
 from google import genai
 
 # 1. Initialize the Gemini Client
-client = genai.Client(api_key = "AIzaSyCL4GP9ICz6khWWcRDhz7zFZBsH2JfB--U")
+client = genai.Client(api_key)
 
 # 2. Setup the Game Data (Untouched Logic)
 animals = [
